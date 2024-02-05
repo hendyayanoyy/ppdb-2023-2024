@@ -8,13 +8,18 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className="relative">
+      <div id='home'>
       <Hero />
+      </div>
+
+      <div id='profile'>
       <Profile />
-      <div className='pt-20'>
+      </div>
+      <div id='information' className='pt-20'>
         <Schedule />
       </div>
 
-      <div className='pt-20'>
+      <div id='contact' className='pt-20'>
         <Contact />
       </div>
     </div>
