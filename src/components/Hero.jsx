@@ -6,18 +6,18 @@ function Hero() {
   return (
     <div className="relative text-center">
 <div className="relative">
-<div className="logo-ppdb absolute left-0 top-0 z-20 p-2 text-left text-lg lg:text-sm font-bold">
+<div className="logo-ppdb absolute left-0 top-0 p-2 text-left text-lg lg:text-sm font-bold">
   <p className='text-white'>PPDB</p>
   <p className='text-white tracking-tight'>SMP MITRA BINTARO<br/>
   ISLAMIC SCHOOL</p>
 </div>
 
-  <div className='absolute top-0 right-0 flex justify-end md:mr-10'>
+  <div className='absolute top-0 right-0 flex justify-end md:mr-10 z-40'>
     <Navbar />
   </div>
 </div>
 
-<div className='absolute pb-40 w-full text-xl sm:text-2xl md:text-3xl lg:text-4xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-shadow'>
+<div className='absolute pb-40 w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-shadow'>
   <p className="text-red-600">PENERIMAAN PESERTA DIDIK BARU</p>
   <p className="text-blue-500">SMP MITRA BINTARO<br/>
                                   ISLAMIC SCHOOL</p>

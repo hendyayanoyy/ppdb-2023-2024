@@ -5,7 +5,7 @@ function Profile() {
   return (
     <div className='bg-blue-800 w-full h-100% pt-32'>
         <h1 className='text-3xl font-bold'>PROFIL SMP MITRA BINTARO ISLAMIC SCHOOL</h1>
-        <img src={logo} alt="" className="shadow-white w-32 mx-auto my-4" />
+        <img src={logo} alt="" className="logo-profile w-32 mx-auto my-4" />
         <p className='text-xl font-medium'> SMP Mitra Bintaro Islamic School adalah lembaga pendidikan yang berada di bawah Yayasan Mahkota Wisata <br/>
         berkomitmen untuk memberikan pendidikan berkualitas<br/>
         dengan landasan nilai-nilai Islam.<br/>

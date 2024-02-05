@@ -23,18 +23,17 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   return (
     <div>
       <nav>
-        <ul className={`flex text-white text-lg md:text-2xl gap-4 md:gap-8 p-4 fixed top-0 right-0 left-8 md:right-8 justify-end ${isScrolled ? 'bg-black bg-opacity-75' : ''}`}>
+        <ul className={`flex z-50 text-white text-lg md:text-2xl gap-4 md:gap-8 p-4 fixed top-0 right-0 left-8 md:right-8 justify-end ${isScrolled ? 'bg-black bg-opacity-75' : ''}`}>
           <ScrollLink to="home" smooth spy={true} offset={-70} duration={500} className="hover:underline cursor-pointer">Beranda</ScrollLink>
           <ScrollLink to="profile" smooth spy={true} offset={50} duration={500} className="hover:underline cursor-pointer">Profil</ScrollLink>
           <ScrollLink to="information" smooth spy={true} offset={10} duration={500} className="hover:underline cursor-pointer">Informasi</ScrollLink>
           <ScrollLink to="contact" smooth spy={true} offset={20} duration={500} className="hover:underline cursor-pointer">Kontak</ScrollLink>
         </ul>
         <button
-          className={`fixed inset-0 bg-black opacity-50 z-40 ${isOpen ? 'block' : 'hidden'}`}
+          className={`fixed inset-0 bg-black opacity-50 ${isOpen ? 'block' : 'hidden'}`}
           onClick={toggleNavbar}
         >
           {isOpen ? (
@@ -46,6 +45,7 @@ function Navbar() {
       </nav>
     </div>
   );
+  
 }
 
 export default Navbar;
