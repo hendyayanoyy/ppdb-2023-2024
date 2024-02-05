@@ -1,4 +1,4 @@
-import hero from "../assets/hero3.png";
+import hero from "../assets/hero4.png";
 import Navbar from "../components/NavbarResponsive";
 
 function Hero() {
@@ -25,15 +25,15 @@ function Hero() {
       <div className="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 text-shadow2 text-lg md:text-3xl lg:text-4xl tracking-tight text-white px-5 md:px-0">
         <p>
           Untuk calon pendaftar masuk SMP Mitra Bintaro Islamic School tahun
-          ajaran 2024/2025 bisa mendaftar lewat website ini atau langsung datang
+          ajaran 2024/2025 bisa langsung datang
           ke SMP Mitra Bintaro Islamic School
         </p>
       </div>
 
       <div className="absolute pt-24 top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <button className=" bg-blue-200 hover:bg-blue-400 text-black font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950 hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
+        {/* <button className=" bg-blue-200 hover:bg-blue-400 text-black font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950 hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">
           DAFTAR
-        </button>
+        </button> */}
       </div>
       <img
         src={hero}
