@@ -31,7 +31,7 @@ const Gallery = () => {
     <img
       src={getImagePath()}
       alt=""
-      className="shadow-white w-full h-screen object-cover"
+      className="shadow-white w-full h-screen object-cover transition-opacity duration-1000 ease-in-out"
     />
   );
 };

@@ -8,7 +8,7 @@ function Schedule() {
       <hr className="border-b-2 border-red-500 my-1" />
 
       <div className="flex flex-col items-center lg:flex-row justify-center">
-        <div className="card-shadow m-4 lg:m-12 bg-gray-700 w-[300px] lg:max-w-[300px] rounded-xl hover:bg-gray-900 hover:scale-110 duration-700 p-5">
+        <div className="card-shadow m-4 lg:m-12 bg-gray-700 w-[300px] lg:max-w-[300px] rounded-xl hover:bg-gray-900 hover:scale-110 duration-700 p-5" data-aos="zoom-in" data-aos-duration="900">
           <figure className="w-24 h-24 p-2 rounded-md mx-auto">
             <img src={Plane} alt="" className="shadow-white w-full" />
           </figure>
@@ -23,7 +23,7 @@ function Schedule() {
           <h3 className="text-white">4 Mei s.d 25 Mei 2024</h3>
         </div>
 
-        <div className="card-shadow m-4 lg:m-12 bg-gray-700 w-[300px] lg:max-w-[300px] rounded-xl hover:bg-gray-900 hover:scale-110 duration-700 p-5">
+        <div className="card-shadow m-4 lg:m-12 bg-gray-700 w-[300px] lg:max-w-[300px] rounded-xl hover:bg-gray-900 hover:scale-110 duration-700 p-5" data-aos="zoom-in" data-aos-duration="800">
           <figure className="w-24 h-24 p-2 rounded-md mx-auto">
             <img src={Plane} alt="" className="shadow-white w-full" />
           </figure>

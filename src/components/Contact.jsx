@@ -21,7 +21,7 @@ function Contact() {
 
       <div className="flex font-semibold text-sm md:text-xl lg:text-xl gap-10 lg:flex-col flex-col max-w-xl mx-auto mt-10">
         <div className="icon flex flex-col md:flex-row  gap-4 font-bold items-center lg:mb-0 mb-6">
-          <img src={phone} className="w-10 h-10" alt="" />
+          <img src={phone} className="w-10 h-10" alt=""  />
           <div className="mt-2">
             <a
               href="https://wa.me/6281234567890"
