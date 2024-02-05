@@ -45,7 +45,7 @@ function Hero() {
       <img
         src={hero}
         alt=""
-        className="shadow-white w-full h-screen object-cover"
+        className="shadow-white w-full h-screen object-cover "
       />
     </div>
   );
