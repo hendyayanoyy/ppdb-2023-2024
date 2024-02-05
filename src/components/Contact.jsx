@@ -3,7 +3,7 @@ import mail from "../assets/mail-icon.png";
 
 function Contact() {
   return (
-    <div>
+    <div className="mb-20">
       <hr className="border-b-2 border-red-500 my-1" />
       <h2 className="font-bold text-3xl bg-black text-white py-2">
         HUBUNGI KAMI
@@ -13,15 +13,15 @@ function Contact() {
       <h3 className="text-4xl font-semibold pt-20">
         SMP Mitra Bintaro Islamic School
       </h3>
-      <hr className="border-b-2 border-red-600 my-4 mx-auto w-20 mb-20" />
-      <p className="text-2xl text-center">
+      <hr className="border-b-2 border-red-600 my-4 mx-auto w-20 mb-10" />
+      <p className="text-2xl text-center max-w-xl mx-auto">
         Jl. Japos Raya Pondok Jati No.45B, Jurang Mangu Barat, Kec. Pd. Aren,
         Kota Tangerang Selatan, Banten 15233
       </p>
 
-      <div className="flex justify-center font-semibold text-xl gap-10 px-4 lg:px-24 py-20 lg:flex-row flex-col items-center">
-        <div className="icon flex flex-col font-bold items-center lg:mb-0 mb-6">
-          <img src={phone} className="w-20 h-20" alt="" />
+      <div className="flex font-semibold text-xl gap-10 lg:flex-col flex-col max-w-xl mx-auto mt-10">
+        <div className="icon flex gap-4 font-bold items-center lg:mb-0 mb-6">
+          <img src={phone} className="w-10 h-10" alt="" />
           <div className="mt-2">
             <a
               href="https://wa.me/6281234567890"
@@ -45,9 +45,8 @@ function Contact() {
             </a>
           </div>
         </div>
-
-        <div className="icon flex flex-col font-bold items-center">
-          <img src={mail} className="w-20 h-20" alt="" />
+        <div className="icon flex gap-4 font-bold items-center">
+          <img src={mail} className="w-10 h-10" alt="" />
           <a className="mt-2 hover:text-red-500 cursor-pointer text-md">
             smp.mitrabintaroislamicschool@gmail.com
           </a>

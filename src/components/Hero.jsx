@@ -5,14 +5,7 @@ function Hero() {
   return (
     <div className="relative text-center">
       <div className="relative">
-        <div className="logo-ppdb absolute left-0 top-0 p-2 text-left text-lg lg:text-sm font-bold">
-          <p className="text-white">PPDB</p>
-          <p className="text-white tracking-tight">
-            SMP MITRA BINTARO
-            <br />
-            ISLAMIC SCHOOL
-          </p>
-        </div>
+        <div className="logo-ppdb absolute left-0 top-0 p-2 text-left text-lg lg:text-sm font-bold"></div>
 
         <div className="absolute top-0 right-0 flex justify-end md:mr-10 z-40">
           <Navbar />
@@ -45,7 +38,7 @@ function Hero() {
       <img
         src={hero}
         alt=""
-        className="shadow-white w-full h-screen object-cover "
+        className="shadow-white w-full h-screen object-cover"
       />
     </div>
   );
