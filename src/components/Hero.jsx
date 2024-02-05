@@ -1,5 +1,6 @@
-import hero from "../assets/hero4.png";
+
 import Navbar from "../components/NavbarResponsive";
+import Gallery from "./Carousell";
 
 function Hero() {
   return (
@@ -35,11 +36,7 @@ function Hero() {
           DAFTAR
         </button> */}
       </div>
-      <img
-        src={hero}
-        alt=""
-        className="shadow-white w-full h-screen object-cover"
-      />
+      <Gallery/>
     </div>
   );
 }
