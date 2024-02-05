@@ -27,7 +27,7 @@ function Navbar() {
     <div>
       <nav>
         <ul
-          className={`flex z-50 text-white text-lg md:text-2xl gap-4 md:gap-8 p-4 fixed top-0 right-0 left-8 md:right-8 justify-end ${
+          className={`flex z-50 text-white text-lg md:text-xl gap-4 md:gap-8 p-4 fixed top-0 right-0 left-8 md:right-8 justify-end ${
             isScrolled ? "bg-black bg-opacity-75" : ""
           }`}
         >
