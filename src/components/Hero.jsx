@@ -12,7 +12,7 @@ function Hero() {
         </div>
       </div>
 
-      <div className="absolute pb-40 w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-shadow">
+      <div className="absolute pb-40 w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-shadow px-5 md:px-0">
         <p className="text-red-600">PENERIMAAN PESERTA DIDIK BARU</p>
         <p className="text-blue-500">
           SMP MITRA BINTARO
@@ -22,7 +22,7 @@ function Hero() {
         <hr className="border-b-2 border-red-600 my-4 mx-auto w-20" />
       </div>
 
-      <div className="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 text-shadow2 text-lg md:text-3xl lg:text-4xl tracking-tight text-white">
+      <div className="absolute w-full top-1/2 left-1/2 transform -translate-x-1/2 text-shadow2 text-lg md:text-3xl lg:text-4xl tracking-tight text-white px-5 md:px-0">
         <p>
           Untuk calon pendaftar masuk SMP Mitra Bintaro Islamic School tahun
           ajaran 2024/2025 bisa mendaftar lewat website ini atau langsung datang

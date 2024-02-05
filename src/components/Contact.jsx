@@ -14,13 +14,13 @@ function Contact() {
         SMP Mitra Bintaro Islamic School
       </h3>
       <hr className="border-b-2 border-red-600 my-4 mx-auto w-20 mb-10" />
-      <p className="text-2xl text-center max-w-xl mx-auto">
+      <p className="text-sm px-10 md:px-0 lg:px-0 md:text-2xl lg:text-2xl text-center max-w-xl mx-auto">
         Jl. Japos Raya Pondok Jati No.45B, Jurang Mangu Barat, Kec. Pd. Aren,
         Kota Tangerang Selatan, Banten 15233
       </p>
 
-      <div className="flex font-semibold text-xl gap-10 lg:flex-col flex-col max-w-xl mx-auto mt-10">
-        <div className="icon flex gap-4 font-bold items-center lg:mb-0 mb-6">
+      <div className="flex font-semibold text-sm md:text-xl lg:text-xl gap-10 lg:flex-col flex-col max-w-xl mx-auto mt-10">
+        <div className="icon flex flex-col md:flex-row  gap-4 font-bold items-center lg:mb-0 mb-6">
           <img src={phone} className="w-10 h-10" alt="" />
           <div className="mt-2">
             <a
@@ -45,7 +45,7 @@ function Contact() {
             </a>
           </div>
         </div>
-        <div className="icon flex gap-4 font-bold items-center">
+        <div className="icon flex flex-col md:flex-row gap-4 font-bold items-center">
           <img src={mail} className="w-10 h-10" alt="" />
           <a className="mt-2 hover:text-red-500 cursor-pointer text-md">
             smp.mitrabintaroislamicschool@gmail.com

@@ -60,3 +60,9 @@ nav.bg-black {
 .logo-profile {
   filter: drop-shadow(2px 2px 2px rgba(255, 255, 255, 0.808));
 }
+
+@media (max-width: 500px) {
+  #profile .bg-blue-800 {
+    padding: 20px;
+  }
+}
