@@ -1,15 +1,9 @@
 import { useState, useEffect } from "react";
-import { Link as ScrollLink } from "react-scroll";
-import hamburgerIcon from "../assets/hamburger.png";
-import crossIcon from "../assets/cross.png";
+import { Link as ScrollLink, Element, Events, scrollSpy } from "react-scroll";
 
 function Navbar() {
-  const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsOpen(!isOpen);
-  };
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +13,18 @@ function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
+    // Inisialisasi react-scroll untuk memungkinkan pengawasan aktif
+    scrollSpy.update();
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  const handleSetActive = (to) => {
+    setActiveSection(to);
+  };
+
   return (
     <div>
       <nav className="container">
@@ -34,56 +36,48 @@ function Navbar() {
           <ScrollLink
             to="home"
             smooth
-            spy={true}
+            spy
             offset={-70}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className={`hover:underline cursor-pointer ${activeSection === "home" ? "underline" : ""}`}
+            onSetActive={() => handleSetActive("home")}
           >
             Beranda
           </ScrollLink>
           <ScrollLink
             to="profile"
             smooth
-            spy={true}
+            spy
             offset={50}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className={`hover:underline cursor-pointer ${activeSection === "profile" ? "underline" : ""}`}
+            onSetActive={() => handleSetActive("profile")}
           >
             Profil
           </ScrollLink>
           <ScrollLink
             to="information"
             smooth
-            spy={true}
-            offset={10}
+            spy
+            offset={50}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className={`hover:underline cursor-pointer ${activeSection === "information" ? "underline" : ""}`}
+            onSetActive={() => handleSetActive("information")}
           >
             Informasi
           </ScrollLink>
           <ScrollLink
             to="contact"
             smooth
-            spy={true}
-            offset={20}
+            spy
+            offset={-100}
             duration={500}
-            className="hover:underline cursor-pointer"
+            className={`hover:underline cursor-pointer ${activeSection === "contact" ? "underline" : ""}`}
+            onSetActive={() => handleSetActive("contact")}
           >
             Kontak
           </ScrollLink>
         </ul>
-        <button
-          className={`fixed inset-0 bg-black opacity-50 ${
-            isOpen ? "block" : "hidden"
-          }`}
-          onClick={toggleNavbar}
-        >
-          {isOpen ? (
-            <img src={crossIcon} alt="Close" className="w-6 h-6" />
-          ) : (
-            <img src={hamburgerIcon} alt="Menu" className="w-6 h-6" />
-          )}
-        </button>
       </nav>
     </div>
   );
