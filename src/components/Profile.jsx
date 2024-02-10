@@ -22,7 +22,7 @@ function Profile() {
           <h2 className="text-sm md:text-2xl lg:text-2xl font-bold mb-2">
             Visi
           </h2>
-          <ul className="text-sm md:text-lg lg:text-lg font-medium list-decimal text-justify mx-auto inline-block text-gray-600">
+          <ul className="text-sm md:text-lg lg:text-lg font-normal list-decimal text-justify mx-auto inline-block text-gray-600">
             <li>
               Mengembangkan potensi akademik dan non-akademik siswa secara optimal.
             </li>
@@ -40,7 +40,7 @@ function Profile() {
           <h2 className="text-sm md:text-2xl lg:text-2xl font-bold mb-2">
             Misi
           </h2>
-          <ul className="text-sm md:text-lg lg:text-lg font-medium list-decimal text-justify mx-auto inline-block text-gray-600">
+          <ul className="text-sm md:text-lg lg:text-lg font-normal list-decimal text-justify mx-auto inline-block text-gray-600">
             <li>
               Mengembangkan potensi akademik dan non-akademik siswa secara optimal.
             </li>

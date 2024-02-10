@@ -9,7 +9,7 @@ function Navbar() {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      setIsScrolled(scrollPosition > 640);
+      setIsScrolled(scrollPosition > 0);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -52,7 +52,7 @@ function Navbar() {
               to="profile"
               smooth
               spy
-              offset={50}
+              offset={0}
               duration={500}
               className={`hover:text-red-600 cursor-pointer ${activeSection === "profile" ? "text-red-600" : ""}`}
               onSetActive={() => handleSetActive("profile")}
@@ -63,7 +63,7 @@ function Navbar() {
               to="information"
               smooth
               spy
-              offset={50}
+              offset={0}
               duration={500}
               className={`hover:text-red-600 cursor-pointer ${activeSection === "information" ? "text-red-600" : ""}`}
               onSetActive={() => handleSetActive("information")}
