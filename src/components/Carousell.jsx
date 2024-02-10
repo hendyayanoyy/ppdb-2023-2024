@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import hero1 from "../assets/hero2.png";
+import { useState, useEffect } from 'react';
+import hero1 from "../assets/hero1.png";
 import hero2 from "../assets/hero3.png";
-import hero3 from "../assets/hero4.png";
 
 const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(1);
@@ -20,8 +19,6 @@ const Gallery = () => {
         return hero1;
       case 2:
         return hero2;
-      case 3:
-        return hero3;
       default:
         return hero1;
     }

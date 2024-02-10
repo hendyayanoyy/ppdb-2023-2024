@@ -1,56 +1,58 @@
 import phone from "../assets/phone-icon.png";
 import mail from "../assets/mail-icon.png";
+import Logo from "../assets/logo.png";
 
 function Contact() {
   return (
-    <div className="mb-20">
-      <hr className="border-b-2 border-red-500 my-1" />
-      <h2 className="font-bold text-3xl bg-black text-white py-2">
-        HUBUNGI KAMI
-      </h2>
-      <hr className="border-b-2 border-red-500 my-1" />
+    <div className="text-white">
+      <div className="bg-curves w-full h-[56vh] "></div>
+      <div className="bg-[#F33E3E] pb-12 px-12">
+        <div className="flex font-semibold text-sm md:text-xl lg:text-xl gap-4 lg:flex-col flex-col max-w-[50%] rounded-[12px] bg-[rgba(0,0,0,0.3)] p-12">
+          <h2 className="font-bold text-xl text-gray-400 py-2">
+            HUBUNGI KAMI
+          </h2>
 
-      <h3 className="text-4xl font-semibold pt-10">
-        SMP Mitra Bintaro Islamic School
-      </h3>
-      <hr className="border-b-2 border-red-600 my-4 mx-auto w-20 mb-10" />
-      <p className="text-md font-semibold px-10 md:px-0 lg:px-0 md:text-2xl lg:text-2xl text-center max-w-xl mx-auto">
-        Jl. Japos Raya Pondok Jati No.45B, Jurang Mangu Barat, Kec. Pd. Aren,
-        Kota Tangerang Selatan, Banten 15233
-      </p>
+          <img src={Logo} alt="" className="w-[20%] mx-auto" />
 
-      <div className="flex font-semibold text-sm md:text-xl lg:text-xl gap-10 lg:flex-col flex-col max-w-xl mx-auto mt-10">
-        <div className="icon flex flex-col md:flex-row  gap-4 font-bold items-center lg:mb-0 mb-6">
-          <img src={phone} className="w-10 h-10" alt=""  />
-          <div className="mt-2">
-            <a
-              href="https://wa.me/6282169462242"
-              className="hover:text-red-500"
-            >
-              082169462242{" "}
-            </a>
-            <span>/ </span>
-            <a
-              href="https://wa.me/6287809270299"
-              className="hover:text-red-500"
-            >
-              087809270299{" "}
-            </a>
-            <span>/ </span>
-            <a
-              href="https://wa.me/6289513606272"
-              className="hover:text-red-500"
-            >
-              089513606272
+          <h3 className="text-3xl font-semibold">
+            SMP Mitra Bintaro Islamic School
+          </h3>
+          <hr className="border-b-2 border-gray-400 mx-auto w-20" />
+          <p className="text-md font-normal px-10 md:px-0 lg:px-0 md:text-lg lg:text-lg text-left text-gray-200">
+            Jl. Japos Raya Pondok Jati No.45B, Jurang Mangu Barat, Kec. Pd. Aren, Kota Tangerang Selatan, Banten 15233
+          </p>
+          <div className="icon flex flex-col md:flex-row gap-4 font-normal items-center lg:mb-0 mb-6">
+            <img src={phone} className="w-8 h-8" alt=""  />
+            <div className="flex gap-3 items-center">
+              <a
+                href="https://wa.me/6282169462242"
+                className="hover:text-gray-400"
+              >
+                082169462242{" "}
+              </a>
+              <span>/ </span>
+              <a
+                href="https://wa.me/6287809270299"
+                className="hover:text-gray-400"
+              >
+                087809270299{" "}
+              </a>
+              <span>/ </span>
+              <a
+                href="https://wa.me/6289513606272"
+                className="hover:text-gray-400"
+              >
+                089513606272
+              </a>
+            </div>
+          </div>
+          <div className="icon flex flex-col md:flex-row gap-4 font-normal items-center">
+            <img src={mail} className="w-8 h-8" alt="" />
+            <a className="hover:text-gray-400 cursor-pointer text-md">
+              smp.mitrabintaroislamicschool@gmail.com
             </a>
           </div>
-        </div>
-        <div className="icon flex flex-col md:flex-row gap-4 font-bold items-center">
-          <img src={mail} className="w-10 h-10" alt="" />
-          <a className="mt-2 hover:text-red-500 cursor-pointer text-md">
-            smp.mitrabintaroislamicschool@gmail.com
-          </a>
-        </div>
+        </div>  
       </div>
     </div>
   );

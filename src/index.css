@@ -1,3 +1,10 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+.bg-curves {
+    background-image: url('./src/assets/wave.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
