@@ -4,7 +4,7 @@ import Logo from "../assets/logo.png";
 
 function Contact() {
   return (
-    <div className="text-white overflow-y-auto">
+    <div className="text-white overflow-hidden">
       {/* Glassmorphism */}
       <div className="bg-curves w-full h-[56vh] "></div>
       <div className="bg-[#F33E3E] pb-10 px-4 md:px-12 flex">
