@@ -23,9 +23,9 @@ function Hero() {
         <hr className="border-b-2 border-red-600 my-4 mx-auto w-20" />
       </div>
 
-      <div className="absolute w-full top-1/2 left-1/2 transform mt-5 -translate-x-1/2 text-shadow2 text-lg md:text-2xl lg:text-xl tracking-tight text-white px-5 md:px-0">
+      {/* <div className="absolute w-full top-1/2 left-1/2 transform mt-5 -translate-x-1/2 text-shadow2 text-lg md:text-2xl lg:text-xl tracking-tight text-white px-5 md:px-0">
         <button className="mr-6 px-8 py-2 bg-red-600 text-white rounded-lg cursor-pointer">Daftar Sekarang</button>
-      </div>
+      </div> */}
 
       <div className="absolute pt-24 top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         {/* <button className=" bg-blue-200 hover:bg-blue-400 text-black font-bold py-3 px-6 rounded-full shadow-lg shadow-neutral-950 hover:text-white transform transition-all duration-500 ease-in-out hover:scale-110 hover:brightness-110 hover:animate-pulse active:animate-bounce">

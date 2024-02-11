@@ -28,10 +28,10 @@ function Navbar() {
 
   return (
     <div>
-      <nav className={`container px-4 md:p-2 flex justify-between items-center ${isScrolled ? "bg-[rgba(0,0,0,0.2)]" : "bg-transparent"} `}>
+      <nav className={`container md:p-2 flex justify-between items-center ${isScrolled ? "bg-[rgba(0,0,0,0.2)]" : "bg-transparent"} `}>
         <a href="#" className="flex items-center gap-3">
           <img src={Logo} alt="logo-brand" className="w-[100%] md:w-[12%]" />
-          <span className={`text-md text-white z-50 `}>SMP MITRA BINTARO ISLAMIC SCHOOL</span>
+          <span className={`text-md md:text-sm lg:text-md text-white z-5 `}>SMP MITRA BINTARO ISLAMIC SCHOOL</span>
         </a>
         <div className="flex items-center gap-3">
           <ul
@@ -63,7 +63,7 @@ function Navbar() {
               to="information"
               smooth
               spy
-              offset={0}
+              offset={-150}
               duration={500}
               className={`hover:text-red-600 cursor-pointer ${activeSection === "information" ? "text-red-600" : ""}`}
               onSetActive={() => handleSetActive("information")}
@@ -74,7 +74,7 @@ function Navbar() {
               to="contact"
               smooth
               spy
-              offset={-100}
+              offset={340}
               duration={500}
               className={`hover:text-red-600 cursor-pointer ${activeSection === "contact" ? "text-red-600" : ""}`}
               onSetActive={() => handleSetActive("contact")}
