@@ -17,8 +17,9 @@ function Profile() {
           yang berkualitas, cerdas, dan berakhlak mulia.
         </p>
       </div>
-      <div className="flex flex-row w-[100%] gap-12">
-        <div className="shadow-md border mx-auto rounded-lg mt-5 px-12 py-8">
+      <div className="flex flex-col md:flex-row w-[100%] md:gap-12">
+        {/* Kartu Pertama */}
+        <div className="shadow-md border mx-auto rounded-lg mt-5 px-12 py-8 md:w-1/2">
           <h2 className="text-sm md:text-2xl lg:text-2xl font-bold mb-2">
             Visi
           </h2>
@@ -36,7 +37,9 @@ function Profile() {
             </li>
           </ul>
         </div>
-        <div className="shadow-md border mx-auto rounded-lg mt-5 px-12 py-8">
+
+        {/* Kartu Kedua */}
+        <div className="shadow-md border mx-auto rounded-lg mt-5 px-12 py-8 md:w-1/2">
           <h2 className="text-sm md:text-2xl lg:text-2xl font-bold mb-2">
             Misi
           </h2>
